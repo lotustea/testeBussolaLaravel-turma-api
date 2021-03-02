@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "92e676a9-2f5f-4466-95fb-c6ecc1a2d742",
+		"name": "turma-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "turmas",
+			"item": [
+				{
+					"name": "criar turma",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/turmas?nome=turma teste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"turmas"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "turma teste"
+								}
+							]
+						},
+						"description": "POST cadastra novo aluno"
+					},
+					"response": []
+				},
+				{
+					"name": "listar turmas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/turmas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"turmas"
+							]
+						},
+						"description": "GET todos os alunos"
+					},
+					"response": []
+				},
+				{
+					"name": "get turma por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/turmas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"turmas",
+								"1"
+							]
+						},
+						"description": "GET aluno por id"
+					},
+					"response": []
+				},
+				{
+					"name": "lista alunos com matriculas ativas por turma",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/turmas/1/alunosAtivos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"turmas",
+								"1",
+								"alunosAtivos"
+							]
+						},
+						"description": "GET todos os alunos com matriculas ativas na turma por id"
+					},
+					"response": []
+				},
+				{
+					"name": "editar turma",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/turmas/1?nome=turma teste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"turmas",
+								"1"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "turma teste"
+								}
+							]
+						},
+						"description": "POST cadastra novo aluno"
+					},
+					"response": []
+				},
+				{
+					"name": "deletar turma",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/turmas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"turmas",
+								"1"
+							]
+						},
+						"description": "DELETE deletar aluno por id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "alunos",
+			"item": [
+				{
+					"name": "criar aluno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/alunos?nome=luis&sexo=masculino&data_nascimento=1997-06-15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"alunos"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "luis"
+								},
+								{
+									"key": "sexo",
+									"value": "masculino"
+								},
+								{
+									"key": "data_nascimento",
+									"value": "1997-06-15"
+								}
+							]
+						},
+						"description": "POST cadastra novo aluno"
+					},
+					"response": []
+				},
+				{
+					"name": "listar turmas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/turmas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"turmas"
+							]
+						},
+						"description": "GET todos os alunos"
+					},
+					"response": []
+				},
+				{
+					"name": "get aluno por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/alunos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"alunos",
+								"1"
+							]
+						},
+						"description": "GET aluno por id"
+					},
+					"response": []
+				},
+				{
+					"name": "editar aluno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/alunos/2?nome=ze&sexo=oi&data_nascimento=1998-06-15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"alunos",
+								"2"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "ze"
+								},
+								{
+									"key": "sexo",
+									"value": "oi"
+								},
+								{
+									"key": "data_nascimento",
+									"value": "1998-06-15"
+								}
+							]
+						},
+						"description": "PUT edita aluno por id"
+					},
+					"response": []
+				},
+				{
+					"name": "deletar aluno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/alunos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"alunos",
+								"1"
+							]
+						},
+						"description": "DELETE deletar aluno por id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "matriculas",
+			"item": [
+				{
+					"name": "criar matricula",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matriculas?aluno_id=4&turma_id=1&ativo=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matriculas"
+							],
+							"query": [
+								{
+									"key": "aluno_id",
+									"value": "4"
+								},
+								{
+									"key": "turma_id",
+									"value": "1"
+								},
+								{
+									"key": "ativo",
+									"value": "1"
+								}
+							]
+						},
+						"description": "POST criar matricula"
+					},
+					"response": []
+				},
+				{
+					"name": "listar matriculas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matriculas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matriculas"
+							]
+						},
+						"description": "GET todos os alunos"
+					},
+					"response": []
+				},
+				{
+					"name": "get matricula por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matriculas/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matriculas",
+								"2"
+							]
+						},
+						"description": "GET aluno por id"
+					},
+					"response": []
+				},
+				{
+					"name": "editar matricula",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matriculas/1?aluno_id=4&turma_id=1&ativo=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matriculas",
+								"1"
+							],
+							"query": [
+								{
+									"key": "aluno_id",
+									"value": "4"
+								},
+								{
+									"key": "turma_id",
+									"value": "1"
+								},
+								{
+									"key": "ativo",
+									"value": "0"
+								}
+							]
+						},
+						"description": "POST criar matricula"
+					},
+					"response": []
+				},
+				{
+					"name": "deletar matricula",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matricula/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matricula",
+								"1"
+							]
+						},
+						"description": "DELETE deletar aluno por id"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
